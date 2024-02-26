@@ -6,11 +6,11 @@ from string import Template
 import smtplib
 tempalte = Template(Path("Template/template.html").read_text())
 
-# ftpromi0226@gmail.com
+
 message = MIMEMultipart()
 message["from"] = "g.k.anim.tp1999@gmail.com"
 message["to"] = "golam.kibria.anim@g.bracu.ac.bd"
-message["subject"] = "This is a test email"
+message["subject"] = " Elevate Your Style with Zayyana"
 body = tempalte.substitute(
     {"name": "Promi", "logo": "image/ZAYYANA.png"})
 message.attach(MIMEText(body, "html"))
